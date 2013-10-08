@@ -1,0 +1,15 @@
+﻿LAB3
+
+0) Fordeler: mindre koding, gir gode resultater. JQuery gir oss tilgang til flere funksjoner.
+
+1) Sterke sider til HTML/CSS
+	lettere å bygge opp/kode
+	lite avansert
+	styler på enklere måte
+	mye brukt
+Canvas derimot, canvas er elemeter som bruker til å tegne symboler, grafisk osv. via scripting av JavaScript.
+Canvas er mer avanserte enn HTML/CSS og har masse altanativer å velge mellom f.eks man kan tegne en multicolor inni canvas
+
+Jeg syns at det er meningsfult å bruke canvas når man skal lagre amination, spill eller noe med grafikk å gjør f.esk å lagre
+et mini spill til nettsider eller interaktiv dialog applikasjon ved å bruke canvas. 
+
