@@ -50,6 +50,9 @@
 			console.log(mouse.x + "," + mouse.y);
             $("#x").html(mouse.x);
             $("#y").html(mouse.y);
+			$("#x").addClass("blue");
+			$("#y").addClass("purple");
+
 
 			
 			canvas.clearCanvas({
@@ -89,8 +92,8 @@
 		</ul>
 	</p>
 	<canvas id="my_canvas" width="200" height="200"></canvas>
-<p>Avstand fra den venstre kanten av Canvas er <b1><span id="x"></span></b1></p>
-<p>Avstand fra den venstre kanten av Canvas er <b2><span id="y"></span></b2></p>
+<p>Avstand fra den venstre kanten av Canvas er <span id="x"></span></p>
+<p>Avstand fra den venstre kanten av Canvas er <span id="y"></span></p>
     
 </body>
 </html>

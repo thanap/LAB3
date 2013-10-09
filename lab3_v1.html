@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Hendelser med jQuery</title>
-	<!-- Husk å legge til CSS filen din her" -->
+	<title>LAB3 v1</title>
+    <link rel="stylesheet" href="css/lab3.css" type="text/css" />
 	<script src="js/jquery-1.8.1.js"></script>
     <script>
 	
@@ -18,73 +18,53 @@
 			// tastekode for venstre pil; responsen er en utskrift til konsollen (innebygd i nettlesere)
 			case 37:
 				// Her og i andre case skal koden for å skrive til innerHTML skrives (deloppgave 0)
+				$case="venstre pil tast trykket!";
 				console.log( 'venstre pil tast trykket!' );
+				$("#keypressed").html($case);
+				$("#keypressed").addClass("blue-null");
+
+
 				break;
         
 			// tastekode for høyre pil
-			case 39:
-				console.log( 'høyre pil tast trykket!' );
+			case 39: 
+				$case='høyre pil tast trykket!';
+				console.log ('høyre piltast trykket!');
+				$("#keypressed").html($case);
+				$("#keypressed").addClass("blue-null");
 				break;
 				
 			// Her skal koden for å behandle andre tastetrykk skrives (deloppgave 0)
 		
 			case 38:
+				$case="opp pil tast trykket!";
 				console.log('opp pil tast trykket!');
+				$("#keypressed").html($case);
+				$("#keypressed").addClass("blue-null");
+
 				break;
 				
 			case 40:
+				$case="ned pil tast trykket!";
 				console.log('ned pil tast trykket!');
+				$("#keypressed").html($case);
+				$("#keypressed").addClass("blue-null");
 				break;
+				
 				
 
 		
+
+		 
 		}
 		});
 	});
 	
-	document.onkeyup = KeyCheck;       
-
-	function KeyCheck(e)
 	
-	{
-	
-	   var KeyID = (window.event) ? event.keyCode : e.keyCode;
-	
-	
-	   switch(KeyID)
-	
-	   {
-	
-		  case 37:
-	
-		  document.Form1.KeyName.value = "Venstre pil tast trykket!";
-	
-		  break;
-	
-		  case 38:
-	
-		  document.Form1.KeyName.value = "Opp pil tast trykket!";
-	
-		  break;
-	
-		  case 39:
-	
-		  document.Form1.KeyName.value = "Høyre pil tast trykket!";
-	
-		  break;
-	
-		  case 40:
-	
-		  document.Form1.KeyName.value = "Ned pil tast trykket!";
-	
-		  break;
-	   }
-	
-	}
 
 	
 	</script>
-    
+
 
  
 </head>
@@ -100,15 +80,11 @@
 	<p>Man har Console også i andre nettlesere. Bruker du en annen nettleser søk på "JavaScript console" for din nettleser for å finne ut hvordan du kan bruke det.</p>
 	<!-- Oppgaveløsning skal implementeres her -->
     
-<p id="KeyName"></p>
+	
+		<p id="keypressed"></s>
 
 
-    <form name="Form1">
 
-      <input name="KeyName" type="text" value="" style="color:#09F">
-
-
-    </form>
   
 </body>
 </html>
